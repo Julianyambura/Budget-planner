@@ -10,4 +10,10 @@ function calculateTimeDifference(startTime, endTime) {
 
   // Calculate the time difference in milliseconds
   const timeDifferenceMs = endDateTime - startDateTime;
+  const hours = Math.floor(timeDifferenceMs / (1000 * 60 * 60));
+  const minutes = Math.floor(
+    (timeDifferenceMs % (1000 * 60 * 60)) / (1000 * 60)
+  );
+  const seconds = Math.floor((timeDifferenceMs % (1000 * 60)) / 1000);
+  //r
 }
