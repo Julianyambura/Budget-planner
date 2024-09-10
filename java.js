@@ -15,5 +15,9 @@ function calculateTimeDifference(startTime, endTime) {
     (timeDifferenceMs % (1000 * 60 * 60)) / (1000 * 60)
   );
   const seconds = Math.floor((timeDifferenceMs % (1000 * 60)) / 1000);
-  //r
+  //timeDifferenceMs calculates the difference between the two timestamps in milliseconds.
+  //hours calculates the number of hours by dividing the total milliseconds by the number of milliseconds in an hour (1000 * 60 * 60).
+  //minutes calculates the remaining minutes after subtracting the hours, using a similar approach.
+  //seconds calculates the remaining seconds after subtracting hours and minutes.
+  return { hours, minute, second };
 }
