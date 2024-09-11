@@ -19,5 +19,9 @@ function calculateTimeDifference(startTime, endTime) {
   //hours calculates the number of hours by dividing the total milliseconds by the number of milliseconds in an hour (1000 * 60 * 60).
   //minutes calculates the remaining minutes after subtracting the hours, using a similar approach.
   //seconds calculates the remaining seconds after subtracting hours and minutes.
+
   return { hours, minute, second };
 }
+const categorySelect = document.getElementById("activity");
+const selectedCategory = categorySelect.value;
+// access the selected category
